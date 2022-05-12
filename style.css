@@ -1,5 +1,92 @@
+:root {
+    --uno-color: #33a1fd;
+    --dos-color: #fdca40;
+    --tres-color: #f79824;
+    --quatro-color: #2176ff;
+    --cinco-color: #31393c;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--cinco-color);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--uno-color);
+    margin: 10px 10px;
+    height: 100px;
+}
+
+header h1 {
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: #31393c;
+}
+
+header h1 a {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--dos-color);
+    text-decoration: none;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+header nav {
+    margin: 40px 40px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+}
+
+.column-header {
+    margin: 20px 20px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: top;
+    width: 50%;
+    height: 300px;
+}
+
+.run-buddy {
+    background-image: url(./run-buddy.png);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
 }
