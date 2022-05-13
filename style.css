@@ -22,12 +22,14 @@ header {
     background-color: var(--uno-color);
     margin: 10px 10px;
     height: 100px;
+    border-radius: 3px;
 }
 
 header h1 {
     margin-top: 30px;
     margin-right: 50px;
     background-color: #31393c;
+    border-radius: 3px;
 }
 
 header h1 a {
@@ -35,12 +37,18 @@ header h1 a {
     font-size: 40px;
     color: var(--dos-color);
     text-decoration: none;
-    padding-left: 200px;
-    padding-right: 20px;
+}
+
+header h1 a:hover {
+    background-color: #2176ff;
+    color:#f79824;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
 }
 
 header nav {
-    margin: 40px 40px;
+    margin: 40px 10px;
 }
 
 header nav ul {
@@ -53,6 +61,34 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 40px;
+    text-decoration: none;
+    border-bottom: 3px solid #f79824;
+    color: #fdca40;
+    font-size: 2.0vw;
+}
+
+header nav ul li a:hover {
+    background-color: #f79824;
+    opacity: 0.5;
+    border-radius: 5px;
+    color:#31393c
+}
+
+.hero {
+    margin: 10px 10px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    background-image:url(./Screen\ Shot\ 2022-05-12\ at\ 7.35.29\ PM.png);
+}
+
+.hero h2 {
+    color:#31393c;
+    background-color: #fdca40;
+    border-radius: 5px;
 }
 
 .content {
@@ -64,10 +100,26 @@ header nav ul li a {
 .left-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 300px;
+    justify-content: space-around;
+    align-items: left;
+    width: 20%;
+    height: 1200px;
+    background-color: #33a1fd;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.left-content h2 {
+    font-size: 40px;
+    color:#fdca40;
+    border-right: 3px solid #33a1fd;
+    padding-right: 150px;
+    font-weight: bold;
+    text-align: right;
+    border-top: 3px solid #31393c;
+    border-bottom: 3px solid #31393c;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .column-header {
@@ -77,16 +129,72 @@ header nav ul li a {
 .right-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     vertical-align: top;
-    width: 50%;
-    height: 300px;
+    width: 65%;
+    height: 1100px;
+    text-align: left;
+    background-color: #fdca40;
+    border-radius: 5px;
+    margin: 10px 10px;
 }
 
-.run-buddy {
-    background-image: url(./run-buddy.png);
+.bio {
+    font-size: 1.0vw;
+    color: #33a1fd;
+    font-weight: bold;
+    border-top: 5px solid #31393c;
+    border-bottom: 5px solid #31393c;
+    padding: 70px;
+    text-align: left;
+    margin: 10px 10px;
+}
+
+.right-content nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color:#2176ff;
+    border-radius: 5px;
+    padding: 30px 30px;
+}
+
+.right-content nav ul a {
+    padding: 10px 60px;
+    text-decoration: none;
+    color:#33a1fd;
+    border-bottom: 3px solid #f79824;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.right-content nav ul li a:hover {
+    background: var(--uno-color);
+    color: var(--dos-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.run-buddy a img {
     background-size: cover;
-    height: 300px;
-    width: 300px;
+    width: 543px;
+    height: 296px;
+    border: 5px solid #31393c;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.run-buddy a img:hover {
+    background-color: #33a1fd;
+    opacity: 0.3;
+
+}
+
+.run-buddy h3 {
+    background-color: #33a1fd;
+    border-radius: 2px;
+
 }
