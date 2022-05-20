@@ -110,12 +110,11 @@ header nav ul li a:hover {
 }
 
 .left-content h2 {
-    font-size: 40px;
+    font-size: 3.0vw;
     color:#fdca40;
     border-right: 3px solid #33a1fd;
     padding-right: 150px;
     font-weight: bold;
-    text-align: right;
     border-top: 3px solid #31393c;
     border-bottom: 3px solid #31393c;
     padding-top: 40px;
@@ -141,8 +140,8 @@ header nav ul li a:hover {
 }
 
 .bio {
-    font-size: 1.0vw;
-    color: #33a1fd;
+    font-size: 1.5vw;
+    color: #31393c;
     font-weight: bold;
     border-top: 5px solid #31393c;
     border-bottom: 5px solid #31393c;
