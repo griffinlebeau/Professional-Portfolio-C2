@@ -132,7 +132,7 @@ header nav ul li a:hover {
     align-items: center;
     vertical-align: top;
     width: 65%;
-    height: 1100px;
+    height: 1400px;
     text-align: left;
     background-color: #fdca40;
     border-radius: 5px;
@@ -175,6 +175,10 @@ header nav ul li a:hover {
     color: var(--dos-color);
     border-radius: 15px;
     text-shadow: none;
+}
+
+.run-buddy {
+    text-align: center
 }
 
 .run-buddy a img {
